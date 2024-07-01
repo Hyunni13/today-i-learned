@@ -1,6 +1,6 @@
 ### TIL: Swift
 
-<break />
+
 
 >   Array > Instance Property
 
@@ -14,15 +14,15 @@ print(sampleArray.first)  // Optional(1)
 print(emptyArray.first)  // nil
 ```
 
-<break />
+
 
 배열의 첫번째 원소 반환. 빈 배열인 경우, `nil` 반환.
 
-<break />
+
 
 ---
 
-<break />
+
 
 >   Array > Instance Property
 
@@ -38,15 +38,15 @@ print(sampleArray.last)  // Optional(5)
 print(emptyArray.last)  // nil
 ```
 
-<break />
+
 
 배열의 마지막 원소 반환. 빈 배열인 경우, `nil` 반환.
 
-<break />
+
 
 ---
 
-<break />
+
 
 >   Int > Instance Method
 
@@ -63,8 +63,9 @@ print(sampleInt.isMultiple(of: 4))  // false
 print(0.isMultiple(of: 0))  // true <- 0의 배수는 오직 0
 ```
 
-<break />
+
 
 인자의 배수인지에 대한 여부 반환.
 
-<break />
+
+
