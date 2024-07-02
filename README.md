@@ -48,6 +48,28 @@ print(emptyArray.last)  // nil
 
 
 
+>   Array > Instance Method
+
+### reversed()
+
+```swift
+// Complexity: O(1)
+
+let sampleString = "abcde"
+
+print(String(sampleString.reversed()))  // edcba
+```
+
+
+
+배열의 원소들을 역순으로 접근할 수 있는 뷰 반환.
+
+
+
+---
+
+
+
 >   Int > Instance Method
 
 ### isMultiple(of:)
