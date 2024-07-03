@@ -3,7 +3,7 @@ import UIKit
 /**
  Enumerations
  
- 가능한 값들의 목록을 정의하는 커스텀 타입
+ 가능한 케이스들의 목록을 정의하는 커스텀 타입
  
  - 다른 타입들과 마찬가지로 대문자로 시작하는 이름(단수) 사용하기
  - https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations#app-top
@@ -26,7 +26,7 @@ enum Investment2 {
 
 var preferredInvestment = Investment.savings
 
-// 타입이 추론되는 상황이라면, Dot Syntax를 활용하여 값을 할당할 수 있다. 가독성 측면에서 Good.
+// 타입이 추론되는 상황이라면, Dot Syntax를 활용하여 값을 할당할 수 있다. 가독성 측면에서 Good 👍🏻
 preferredInvestment = .stocks
 
 
@@ -41,3 +41,17 @@ default:
     print("I don't care.")
 }
 
+
+// CaseIterable 프로토콜을 채택하면, 모든 케이스를 담고 있는 컬렉션에 접근할 수 있다.
+enum Investment3: CaseIterable {
+    case savings
+    case stocks
+    case bonds
+    case funds
+    case currencies
+}
+
+// 물론 순회도 가능!
+Investment3.allCases.forEach { investment in
+    print(investment)
+}
