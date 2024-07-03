@@ -1,12 +1,12 @@
-## TIL: Swift
+# TIL: Swift
 
 
 
-### 알고리즘 문제 연습
+## Array
 
 
 
->   Array > Instance Property
+>   Instance Property
 
 ### first
 
@@ -28,7 +28,7 @@ print(emptyArray.first)  // nil
 
 
 
->   Array > Instance Property
+>   Instance Property
 
 ### last
 
@@ -52,7 +52,7 @@ print(emptyArray.last)  // nil
 
 
 
->   Array > Instance Method
+>   Instance Method
 
 ### reversed()
 
@@ -70,11 +70,13 @@ print(String(sampleString.reversed()))  // edcba
 
 
 
----
+
+
+## Int
 
 
 
->   Int > Instance Method
+>    Instance Method
 
 ### isMultiple(of:)
 
@@ -92,6 +94,52 @@ print(0.isMultiple(of: 0))  // true <- 0의 배수는 오직 0
 
 
 인자의 배수인지에 대한 여부 반환.
+
+
+
+
+
+## String
+
+
+
+>   Instance Method
+
+### lowercased()
+
+```swift
+// Complexity: O(N)
+
+let sampleString = "AbCdE"
+
+print(sampleString.lowercased())  // abcde
+```
+
+
+
+문자열을 소문자만으로 재구성.
+
+
+
+---
+
+
+
+>   Instance Method
+
+### uppercased()
+
+```swift
+// Complexity: O(N)
+
+let sampleString = "AbCdE"
+
+print(sampleString.uppercased())  // ABCDE
+```
+
+
+
+문자열을 대문자만으로 재구성.
 
 
 
