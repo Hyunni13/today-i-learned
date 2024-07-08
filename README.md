@@ -93,13 +93,33 @@ print(0.isMultiple(of: 0))  // true <- 0의 배수는 오직 0
 
 
 
-인자의 배수인지에 대한 여부 반환.
+인자의 배수 여부 반환.
 
 
 
 
 
 ## String
+
+
+
+>   Initializer
+
+### init(repeating:count:)
+
+```swift
+let sampleString = String(repeating: "J", count: 7)
+
+print(sampleString)  // JJJJJJJ
+```
+
+
+
+주어진 문자를 주어진 횟수만큼 반복해서 문자열 생성
+
+
+
+---
 
 
 
